@@ -38,6 +38,15 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<!-- script for common header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("#header2").load("header.html"); 
+    $("#footer2").load("footer.html"); 
+    });
+    </script>
+
 </head>
 
 <body class="home">
@@ -183,6 +192,8 @@
             </div>
         </nav>
     </header>
+    
+    <div id="header2"></div>
     
     <!-- Slider Revolution -->
     <div class="rev_slider_wrapper fullwidthbanner-container">
@@ -2370,6 +2381,8 @@
             </div>
         </div>
     </footer>
+    
+    <div id="footer2"></div>
     
 	<!-- Modal -->
 	<!-- JW DROPPED Modal 
