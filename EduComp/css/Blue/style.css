@@ -1418,7 +1418,7 @@ blockquote footer{
     display: block;
 }
 
-.teacher-full .personal > div > span:nth-child(2){
+.teacher-full .personal > div > span:nth-child(3){
     color: #20c5f7;
     font-size: 14px;
     font-weight: 700;
