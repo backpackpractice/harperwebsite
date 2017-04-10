@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EDUComp - Premium Bootstrap Theme</title>
+    
+    <!--Bootstrap Framework Version 3.3.7 --> 
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    
+    <!--Font Awesome Version 4.5.0 --> 
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    
+    <!--EDUComp Stylesheet --> 
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/components.css" type="text/css" rel="stylesheet">
+    
+    <!--Google Fonts--> 
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300,700,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Respond.js and HTML shiv provide HTML5 support in older browsers like IE9 and 8 -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- script for common header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    });
+    </script>
+
+</head>
+
+<body>
+    
+    <div class="loader-backdrop">           <!-- Loader -->
+        <div class="loader">
+            <div class="ball-1"></div>
+            <div class="ball-2"></div>
+        </div>
+    </div>
+        
+    <div id="header"></div>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Directions</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Directions</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mt-100 mb-100">
+        <div class="row">
+            <div class="col-sm-12 no-gutter">
+                <h2 class="heading text-center">Directions <span class="color2">to Campus</span>
+                    <span class="sub-heading">Harper School is located on Wild Horse Creek Road off Long Road at I-64 in Ch</span>
+                    <span class="icon-divider"></span>
+                </h2>
+                <!-- Replace Latitude, Logitude and Info Window as per your place -->
+                <div class="gmap" id="gmap" style="height:550px" data-lat="38.6537248" data-long="-90.6451653" data-info-win="<h6>Barat Academy</h6>"></div>
+            </div>
+        </div>
+    </div>
+  
+<!-- code directly from Google Maps APIs page 
+<div id="map"></div>
+    <script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          scrollwheel: false,
+          zoom: 8
+        });
+      }
+ -->
+
+    <div id="footer"></div>
+    
+	<div id="back"><i class="fa fa-angle-up"></i></div>     <!-- Back To Top -->
+
+    <!--jQuery Version 2.2.1-->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+
+    <!--Bootstrap Framework version 3.3.7-->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    
+    
+    
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHaj4YzOMxKM_xg2NH9DCzglkQSciNKog&callback=initMap" async defer></script>
+	
+<!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHaj4YzOMxKM_xg2NH9DCzglkQSciNKog&callback=initMap" async defer></script>	
+ -->	
+    <!--Educomp Custom Script-->
+    <script src="js/main.js" type=text/javascript></script>
+
+</body>
+
+</html>
