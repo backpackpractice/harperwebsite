@@ -402,7 +402,7 @@ function callGoogleMapStyle(lat, long, infoWin)
         mapTypeIds: ['Styled']
         },
         center: new google.maps.LatLng(lat, long),
-        zoom: 16,
+        zoom: 11,
         disableDefaultUI: true, 
         mapTypeId: 'Styled'
     };
