@@ -635,11 +635,11 @@ a.readmore{
 }
 
 .breadcrumb > li > a{
-    color: #fff;
+    color: #fff;     
 }
 
 .breadcrumb>.active{
-    color: #d7d7d7;
+    color: #d7d7d7; 
 }
 
 /* Page Header */

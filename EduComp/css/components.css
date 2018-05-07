@@ -640,12 +640,14 @@ a.readmore{
 
 .breadcrumb>.active{
     color: #d7d7d7;
+
 }
 
 /* Page Header */
 
 .page-header{
-    background-image: url(../images/page-header-green-grass-960x180.jpg);
+/*     background-image: url(../images/page-header-green-grass-960x180.jpg); */
+    background-color: #1a2b51; 
     background-size: cover;
     text-align: center;
     margin:0;
