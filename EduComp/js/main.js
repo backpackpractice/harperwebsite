@@ -259,7 +259,7 @@ function callTestimonial()
         center: true,
         margin: 20,
         autoplay: true,
-        autoplayTimeout: 4000,                       // Testimonials Carousel transition time from one to another in milliseconds
+        autoplayTimeout: 30000,                       // Testimonials Carousel transition time from one to another in milliseconds
         autoplayHoverPause: true
     });
 }
