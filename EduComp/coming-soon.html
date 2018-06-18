@@ -32,6 +32,15 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<!-- script for common header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    });
+    </script>
+
 </head>
 
 <body class="coming-soon">
@@ -42,7 +51,9 @@
             <div class="ball-2"></div>
         </div>
     </div>
-
+        
+    <div id="header"></div>
+    
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
@@ -84,7 +95,7 @@
                         <h5 class="heading"><a href="contact.html">Inquire</a></h5>
                         <span class="inverse">Call us and learn more about Harper School today.</span>
                         <br/><br/>
-                        <a href="tel:(314) 540-3290" class="call-us"><i class="fa fa-phone"></i> (314) 540-3290</a>
+                        <a href="tel:(314) 540-3290" class="call-us"><i class="fa fa-phone"></span></i> (314) 540-3290</a>
                     </div>
                 </div>
             </div>
