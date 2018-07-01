@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Harper School website, private preschool, elementary school, summer camps, and tutoring in St. Louis, MO">
+    <meta name="author" content="Joe Wagner">
 
-    <title>EDUComp - Premium Bootstrap Theme</title>
+    <title>Harper School</title>
     
     <!--Bootstrap Framework Version 3.3.7 --> 
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
@@ -38,9 +38,18 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<!-- script for common header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    });
+    </script>
+
 </head>
 
-<body>
+<body class="home">
         
     <div class="loader-backdrop">           <!-- Loader -->
         <div class="loader">
@@ -49,123 +58,7 @@
         </div>
     </div>
         
-    <header>            <!-- Header = Topbar + Navigation Bar -->
-        <div class="topbar">            <!-- Dark Blue Topbar -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <a href="tel:1800-234-2845" class="call-us"><i class="fa fa-phone"></i> 1800-234-2845</a>          <!-- Change Phone Number Here -->
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="dropdown">          <!-- Language Dropdown -->
-                            <button class="btn btn-xs" type="button" id="select-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-globe"></i> English
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="select-lang">
-                                <li><a href="#">English</a></li>
-                                <li><a href="#">Spanish</a></li>
-                                <li><a href="#">Vietnamese</a></li>
-                            </ul>
-                        </div>
-                        <form class="search form-inline">           <!-- Search Form -->
-                            <input type="text" class="form-control" placeholder="Start typing...">
-                            <button class="btn-search" type="submit"><i class="fa fa-search fa-fw"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <nav class="navbar navbar-default">         <!-- Navigation Bar -->
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false">
-                        <span class="sr-only">Toggle Menu</span>
-                        <span>Menu</span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a> <!-- Replace with your Logo -->
-                </div>
-                
-                <div class="collapse navbar-collapse" id="main-navigation">         <!-- Main Menu -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">Home</a>
-                        	<ul class="sub-menu">
-                        		<li><a href="index.html">Default</a></li>
-                        		<li><a href="index-1.html">Home Version 1</a></li>
-                        		<li><a href="index-2.html">Home Version 2</a></li>
-                        		<li><a href="index-3.html">Home Version 3</a></li>
-                        		<li><a href="index-4.html">Home Version 4</a></li>
-                        	</ul>
-                        </li>
-                        <li><a href="#">About</a>
-                            <ul class="sub-menu">									<!-- Sub Menu -->
-                                <li><a href="brief-history.html">Brief History</a></li>
-                                <li><a href=about-educomp.html>About EduComp</a></li>
-                                <li><a href="admission-process.html">Admission Process</a></li>
-                                <li><a href="albums.html">Albums</a></li>
-                                <li><a href="album-single.html">Album Single</a></li>
-                                <li><a href="testimonials.html">Testimonials</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="code-of-conduct.html">Code of Conduct</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Pages</a>
-                            <ul class="sub-menu">																<!-- Sub Menu -->
-                                <li><a href="#"> Courses <i class="fa fa-angle-right pull-right"></i></a>
-                                    <ul class="sub-menu">														<!-- Sub Sub Menu -->
-                                        <li><a href="course-grid.html">Course Grid</a></li>
-                                        <li><a href="course-list.html">Course List</a></li>
-                                        <li><a href="course-detail.html">Course Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Teachers <i class="fa fa-angle-right pull-right"></i></a>
-                                    <ul class="sub-menu">														<!-- Sub Sub Menu -->
-                                        <li><a href="teachers.html">Our Teachers</a></li>
-                                        <li><a href="teacher-profile.html">Teacher Profile</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Events  <i class="fa fa-angle-right pull-right"></i></a>
-                                    <ul class="sub-menu">														<!-- Sub Sub Menu -->
-                                        <li><a href="upcoming-events.html">Upcoming Events</a></li>
-                                        <li><a href="event-details.html">Event Details</a></li>
-                                    </ul>                                
-                                </li>
-                                <li><a href="coming-soon.html">Coming Soon</a></li>
-                                <li><a href="not-found.html">404</a></li>                                
-                            </ul>
-                        </li>                        
-                        <li><a href="#">Elements</a>
-                            <ul class="sub-menu">																<!-- Sub Menu -->
-                                <li><a href="video.html">Video</a></li>
-                                <li><a href="modals.html">Modals</a></li>
-                                <li><a href="call-to-action.html">Call to action</a></li>
-                                <li><a href="icon-boxes.html">Icon boxes</a></li>
-                                <li><a href="accordion.html">Accordion</a></li>
-                                <li><a href="tabs.html">Tabs</a></li>
-                                <li><a href="tables.html">Tables</a></li>
-                                <li><a href="blockquotes.html">Blockquotes</a></li>
-                                <li><a href="progress-bars.html">Progress Bars</a></li>
-                                <li><a href="lists.html">Lists</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Blog</a>
-                            <ul class="sub-menu">																<!-- Sub Menu -->
-                                <li><a href="blog-list-right-sidebar.html">Blog Right Sidebar</a></li>
-                                <li><a href="blog-list-left-sidebar.html">Blog Left Sidebar</a></li>
-                                <li><a href="blog-single.html">Blog Single</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Contact</a>
-                            <ul class="sub-menu">																<!-- Sub Menu -->
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="google-map.html">Google Map</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <div id="header"></div>
     
     <!-- Slider Revolution -->
     <div class="rev_slider_wrapper fullwidthbanner-container">
@@ -184,11 +77,12 @@
                     data-fsmasterspeed="1500" 
                     data-fsslotamount="7" 
                     data-saveperformance="off"  
-                    data-title="A STUDY ON HAPPINESS" 
-                    data-description="Nurturing the most awesome minds.">
+                    data-title="High Expectations" 
+                    data-description="High Expectations for Your Child">
 
                     <!-- MAIN IMAGE -->
-                    <img src="images/dummy.jpg" data-lazyload="images/slide-1.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <img src="images/coming-soon.jpg" data-lazyload="images/coming-soon.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    
                     <!-- Overlay-->
                     <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
                         id="slide-1-overlay" 
@@ -224,7 +118,7 @@
                         data-splitin="none" 
                         data-splitout="none" 
                         data-responsive_offset="on" 
-                        style="z-index: 6; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">We are the best.
+                        style="z-index: 6; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
                     </div>                            
 
                     <!-- Main Text -->
@@ -247,11 +141,11 @@
                         data-splitin="none" 
                         data-splitout="none" 
                         data-responsive_offset="on" 
-                        style="z-index: 7; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; text-transform:capitalize; font-weight:600; text-align:right; font-family: 'Montserrat', sans-serif;">Nurturing the most awesome minds.
+                        style="z-index: 7; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:right; font-family: 'Montserrat', sans-serif;">High expectations lead to academic success
                     </div>
 
                     <!-- Button -->
-                    <a href="brief-history.html" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
                         id="slide-1-button" 
                         data-x="['right','right','right','right']" data-hoffset="['53','53','53','30']" 
                         data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
@@ -268,7 +162,7 @@
                         data-splitout="none" 
                         data-responsive_offset="on" 
                         data-responsive="off"
-                        style="z-index: 8;">READ MORE 
+                        style="z-index: 8;">APPLY NOW 
                     </a>
                 </li>
 
@@ -285,10 +179,10 @@
                     data-fsmasterspeed="1500" 
                     data-fsslotamount="7" 
                     data-saveperformance="off"  
-                    data-title="A STUDY ON HAPPINESS" 
-                    data-description="Nurturing the most awesome minds.">
+                    data-title="INDIVIDUALIZED INSTRUCTION" 
+                    data-description="Individualized Instruction">
                     <!-- MAIN IMAGE -->
-                    <img src="images/dummy.jpg" data-lazyload="images/slide-2.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <img src="images/girl-ipad.jpg" data-lazyload="images/girl-ipad.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                     <!-- Overlay -->
                     <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
                         id="slide-2-overlay"
@@ -324,7 +218,7 @@
                         data-splitin="none" 
                         data-splitout="none" 
                         data-responsive_offset="on" 
-                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">We are super sporty.
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
                     </div>                            
 
                     <!-- Main Text -->
@@ -347,11 +241,11 @@
                         data-splitin="none" 
                         data-splitout="none" 
                         data-responsive_offset="on" 
-                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; text-transform:capitalize; font-weight:600; text-align:left; font-family: 'Montserrat', sans-serif;">Not just studies, we excel in sports too.
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:left; font-family: 'Montserrat', sans-serif;">Individualized instruction for your child
                     </div>
 
                     <!-- Button -->
-                    <a href="about-educomp.html" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
                         id="slide-2-button" 
                         data-x="['left','left','left','left']" data-hoffset="['53','53','53','30']" 
                         data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
@@ -368,335 +262,1860 @@
                         data-splitout="none" 
                         data-responsive_offset="on" 
                         data-responsive="off"
-                        style="z-index: 12;">READ MORE 
+                        style="z-index: 12;">APPLY NOW 
                     </a>
                 </li>
+                
+
+                <!-- Slide 3 JW INSERTED -->
+                
+                <li data-index="rs-3"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="BALANCE" 
+                    data-description="Balancing Fun and Academic Rigor">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/girl-balancing.jpg" data-lazyload="images/girl-balancing.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-3-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-3-small-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-3-main-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:right; font-family: 'Montserrat', sans-serif;">Balancing fun and academic rigor
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-3-button" 
+                        data-x="['right','right','right','right']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>                
+               
+                <!-- Slide 4 JW INSERTED -->
+                
+                <li data-index="rs-4"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="SELF-CONFIDENCE" 
+                    data-description="Self-confidence">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/boy-smiling-self-confident.jpg" data-lazyload="images/boy-smiling-self-confident.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-4-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-4-small-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-4-main-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:right; font-family: 'Montserrat', sans-serif;">Growing in self-confidence
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-4-button" 
+                        data-x="['right','right','right','right']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>                
+                     
+             <!-- Slide 5 JW INSERTED -->
+                
+                <li data-index="rs-5"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="3 rs" 
+                    data-description="Mastering the 3 Rs">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/girl-writing.jpg" data-lazyload="images/girl-writing.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-5-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-5-small-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-5-main-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:left; font-family: 'Montserrat', sans-serif;">Mastering the 3 Rs
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-5-button" 
+                        data-x="['left','left','left','left']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>                                     
+                         
+                <!-- Slide 6 JW INSERTED -->
+                
+                <li data-index="rs-6"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="PLAY" 
+                    data-description="Playing on the swing">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/boy-swinging.jpeg" data-lazyload="images/boy-swinging.jpeg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-6-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-6-small-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-6-main-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:right; font-family: 'Montserrat', sans-serif;">Taking time out to play
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-6-button" 
+                        data-x="['right','right','right','right']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>                                      
+
+                <!-- Slide 7 JW INSERTED -->
+                
+                <li data-index="rs-7"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="READING" 
+                    data-description="Reading the Classics">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/reading-to-kill-a-mockingbird.jpg" data-lazyload="images/reading-to-kill-a-mockingbird.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-7-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-7-small-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-7-main-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:right; font-family: 'Montserrat', sans-serif;">Reading the classics
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-7-button" 
+                        data-x="['right','right','right','right']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>       
+                              
+                  <!-- Slide 8 JW INSERTED -->
+                <li data-index="rs-8"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="LEARNING BY DOING" 
+                    data-description="Learning by doing">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/students-playing-violin.jpg" data-lazyload="images/students-playing-violin.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-8-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-8-small-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-8-main-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:left; font-family: 'Montserrat', sans-serif;">"Learn by doing" like playing an instrument
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-8-button" 
+                        data-x="['left','left','left','left']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>              
+                              
+                  <!-- Slide 9 JW INSERTED -->
+                <li data-index="rs-9"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="OUTSIDE LEARNING" 
+                    data-description="Learning in and out of the classroom">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/learning-how-to-code.jpg" data-lazyload="images/learning-how-to-code.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-9-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-9-small-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-9-main-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:left; font-family: 'Montserrat', sans-serif;">Learning how to code
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-9-button" 
+                        data-x="['left','left','left','left']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>                           
+
+                  <!-- Slide 10 JW INSERTED -->
+                <li data-index="rs-10"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="OUTSIDE LEARNING" 
+                    data-description="Learning in and out of classroom">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/teen-boy-looks-macroinvertebrates-water.jpg" data-lazyload="images/teen-boy-looks-macroinvertebrates-water.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-10-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-10-small-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-10-main-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:left; font-family: 'Montserrat', sans-serif;">Learning in and out of the classroom
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-10-button" 
+                        data-x="['left','left','left','left']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>          
+                
+                <!-- Slide 11 JW INSERTED -->
+                
+                <li data-index="rs-11"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="ROBOTS" 
+                    data-description="Building and programming robots">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/building-robots.jpg" data-lazyload="images/building-robots.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-11-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-11-small-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-11-main-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:right; font-family: 'Montserrat', sans-serif;">Building and programming robots
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-11-button" 
+                        data-x="['right','right','right','right']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>       
+                
+                <!-- Slide 12 JW INSERTED -->
+                
+                <li data-index="rs-12"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="PHONICS and EARLY MATH" 
+                    data-description="Phonics and early math for preschoolers">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/early-math-and-phonics-for-preschoolers.jpg" data-lazyload="images/early-math-and-phonics-for-preschoolers.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-12-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-12-small-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-12-main-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:right; font-family: 'Montserrat', sans-serif;">Phonics and early math for preschoolers
+                        
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-12-button" 
+                        data-x="['right','right','right','right']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>                                                
+                
+           <!-- Slide 13 JW INSERTED -->
+                
+                <li data-index="rs-13"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="Teamwork" 
+                    data-description="Learning teamwork">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/learning-to-collaborate.jpg" data-lazyload="images/learning-to-collaborate.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-13-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-13-small-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-13-main-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:right; font-family: 'Montserrat', sans-serif;">Teamwork and collaboration
+                        
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-13-button" 
+                        data-x="['right','right','right','right']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>                      
+                
+
+                  <!-- Slide 14 JW INSERTED -->
+                <li data-index="rs-14"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="PLEDGE" 
+                    data-description="Pledge of Allegiance">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/reciting-the-pledge.jpg" data-lazyload="images/reciting-the-pledge.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-14-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-14-small-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-14-main-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:left; font-family: 'Montserrat', sans-serif;">Reciting the Pledge of Allegiance
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-14-button" 
+                        data-x="['left','left','left','left']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>          
+ 
+                  <!-- Slide 15 JW INSERTED -->
+                <li data-index="rs-15"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="SELF-DISCIPLINE" 
+                    data-description="Growing in Self-discipline and control">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/students-self-discipline.jpg" data-lazyload="images/students-self-discipline.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-15-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-15-small-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-15-main-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:left; font-family: 'Montserrat', sans-serif;">Growing in self-discipline and control
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-15-button" 
+                        data-x="['left','left','left','left']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>   
+ 
+                  <!-- Slide 16 JW INSERTED -->
+                <li data-index="rs-16"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="PLAY" 
+                    data-description="Taking time out to play #2">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/girl-swinging.jpg" data-lazyload="images/girl-swinging.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-16-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-16-small-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-16-main-text" 
+                        data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:left; font-family: 'Montserrat', sans-serif;">Taking time out to play
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-16-button" 
+                        data-x="['left','left','left','left']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>   
+       
+
+                  <!-- Slide 17 JW INSERTED -->
+                <li data-index="rs-17"
+                    data-transition="parallaxvertical"
+                    data-slotamount="default"  
+                    data-easein="default" 
+                    data-easeout="default" 
+                    data-masterspeed="default"  
+                    data-thumb=""  
+                    data-rotate="0"  
+                    data-fstransition="fade" 
+                    data-fsmasterspeed="1500" 
+                    data-fsslotamount="7" 
+                    data-saveperformance="off"  
+                    data-title="PARENTS" 
+                    data-description="Parents are first and most important teachers">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/mom-reading-to-daughters.jpg" data-lazyload="images/mom-reading-to-daughters.jpg" alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- Overlay -->
+                    <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-17-overlay"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                        data-width="full"
+                        data-height="full"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                        data-start="1000" 
+                        data-basealign="slide" 
+                        data-responsive_offset="on" 
+                        style="z-index: 9;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 1.00);"> 
+                    </div>
+
+                    <!-- Small Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0 color2" 
+                        id="layer-17-small-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']" 
+                        data-width="none"
+                        data-fontsize="['22', '22', '22', '16']"
+                        data-height="28"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 10; white-space: nowrap; font-weight:bold; font-family: 'Libre Baskerville', serif;">
+                    </div>                            
+
+                    <!-- Main Text -->
+                    <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                        id="slide-17-main-text" 
+                        data-x="['right','right','right','right']" data-hoffset="['50','50','50','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                        data-fontsize="['46','46','46','32']"
+                        data-lineheight="['55','55','55','35']"
+                        data-color="['#fff']"
+                        data-width="['600','600','600','420']"
+                        data-height="none"
+                        data-whitespace="normal"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                        data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        style="z-index: 11; min-width: 600px; max-width: 600px; white-space: normal; text-shadow:0px 2px 2px #000; font-weight:600; text-align:right; font-family: 'Montserrat', sans-serif;">Parents are first and most important teachers
+                    </div>
+
+                    <!-- Button -->
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="tp-caption btn btn-primary rs-parallaxlevel-0 hidden-xs" 
+                        id="slide-17-button" 
+                        data-x="['right','right','right','right']" data-hoffset="['53','53','53','30']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['50','50','50','50']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-transform_idle="o:1;"
+                        data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                        data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+                        data-mask_in="x:0px;y:0px;" 
+                        data-mask_out="x:0;y:0;" 
+                        data-start="1000" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        style="z-index: 12;">APPLY NOW 
+                    </a>
+                </li>   
+              
+                
             </ul>
         </div>
     </div>
     <!-- Revolution Slider Ends -->	
     
-    <div class="bgcolor2 text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <button class="btn-announce"><i class="fa fa-bullhorn"></i></button>
-                    <div class="announcement">
-                        <div class="announcement-text">
-                            <span>School will remain closed on account of heavy rains</span>
-                            <span>Exams postponed by 10 days due to Annual Day celebrations</span>
-                            <span>Late Fee of 10% to be charged from defaulters</span>
-                        </div>
-                        <div class="owl-nav">
-                            <span class="owl-left"><i class="fa fa-angle-left"></i></span>
-                            <span class="owl-right"><i class="fa fa-angle-right"></i></span>
-                        </div>
+    <div class="container pull-up mb-80">          
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="icon-box-3">            <!-- ***** Icon Box Style 3 ***** -->
+                    <div class="icon-box-icon">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-box-content">
+                        <h5 class="heading"><a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank">Apply</a></h5>
+                        <span class="inverse">Preschool, Kindergarten, Elementary K-5, Tutoring</span>
+                        <br/><br/>
+                        <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank">Apply Now</a>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-sm-4">
+                <div class="icon-box-3">            <!-- ***** Icon Box Style 3 ***** -->
+                    <div class="icon-box-icon">
+                        <i class="fa fa-question" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-box-content">
+                        <h5 class="heading"><a href="contact.html">Inquire</a></h5>
+                        <span class="inverse">Ask us your questions. See if Harper is the right fit for your child.</span>
+                        <br/><br/>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="icon-box-3">            <!-- ***** Icon Box Style 3 ***** -->
+                    <div class="icon-box-icon">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-box-content">
+                        <h5 class="heading"><a href="https://goo.gl/forms/skMak6FhVwNrbPwy1" target="_blank"><a href="https://goo.gl/forms/skMak6FhVwNrbPwy1" target="_blank">Visit</a></a></h5>
+                        <span class="inverse">Tour our campus and see what makes Harper special.</span>
+                        <br/><br/>
+                        <a href="https://goo.gl/forms/skMak6FhVwNrbPwy1" target="_blank">Schedule a Tour</a>
+                    </div>
+                </div>
+            </div>                
+        </div>            
     </div>
-    
-    <div class="mb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7 mt-100">
-                    <h3 class="heading">Who We <span class="color2">Are</span></h3>
-                    <p>EDUComp is a premium education theme. 100% responsive and designed for quick customizations, this is an ideal theme for Schools, Colleges, Universities and other Educational Insitutions.</p>
-                    <p>A huge array of new elements coming your way, enjoy lifetime free updates for EDUComp, Buy Now!</p>
-                    <br/>
-                    <ul class="list-styled pull-left">
-                        <li>Super Easy to Customize</li>
-                        <li>Very Well Documented</li>
-                    </ul>
-                    <ul class="list-styled pull-left">
-                        <li>Quick Free Email Support</li>
-                        <li>Lifetime Free Updates</li>
-                    </ul>
-                    <div class="clearfix"></div>
-                    <br/>
-                    <a href="about-educomp.html" class="btn btn-primary btn-sm">Learn More <i class="fa fa-long-arrow-right"></i> </a>
-                </div>
-                <div class="col-sm-5 mt-60">
-                    <div class="newsletter">
-                        <h4 class="newsletter-heading">Stay updated. Subscribe !</h4>
-                        <form>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Email Id">
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="bgcolor3 pt-100 pb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="heading text-center">Why buy <span class="color2">EDUComp</span>
-                        <span class="sub-heading">EDUComp is a fully responsive premium education theme for schools, colleges, insitutions and universities.</span>
-                        <span class="icon-divider"></span>
-                    </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="icon-box-1">
-                        <div class="icon-box-icon">
-                            <i class="fa fa-book"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h5 class="heading">Our Courses</h5>
-                            <span>Course Grid, Course List and Course Single Pages</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="icon-box-1">
-                        <div class="icon-box-icon">
-                            <i class="fa fa-users"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h5 class="heading">Our Teachers</h5>
-                            <span>Teachers Page and Teachers' Profile with Time Table</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="icon-box-1">
-                        <div class="icon-box-icon">
-                            <i class="fa fa-calendar-check-o"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h5 class="heading">Our Events</h5>
-                            <span>Upcoming Events Page and Event's Detail page with Timer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="icon-box-1">
-                        <div class="icon-box-icon">
-                            <i class="fa fa-check-square-o"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h5 class="heading">Coming Soon Page</h5>
-                            <span>Coming Soon page with timer and Subscription Form</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="icon-box-1">
-                        <div class="icon-box-icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h5 class="heading">Theme Styled Google Maps</h5>
-                            <span>Theme Color Coded Google Maps with custom marker</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="icon-box-1">
-                        <div class="icon-box-icon">
-                            <i class="fa fa-youtube"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h5 class="heading">Theme Styled Video</h5>
-                            <span>Theme Styled YouTube Video Integration to EDUComp</span>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-        </div>
-    </div>    
-        
-    <div class="gallery">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="gallery-overlay">
-                    <h2 class="gallery-heading">Life At Educomp</h2>
-                </div>
-                <div class="col-sm-3 no-gutter">
-                    <div class="img-box">
-						<a href="images/gallery-4.jpg" data-gal="prettyPhoto[galleryName]" class="img-zoom"><i class="fa fa-search"></i></a>
-						<img src="images/gallery-4.jpg" alt="" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-sm-3 no-gutter">
-                    <div class="img-box">
-						<a href="images/gallery-6.jpg" data-gal="prettyPhoto[galleryName]" class="img-zoom"><i class="fa fa-search"></i></a>
-                        <img src="images/gallery-6.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="img-box">
-						<a href="images/gallery-1.jpg" data-gal="prettyPhoto[galleryName]" class="img-zoom"><i class="fa fa-search"></i></a>
-                        <img src="images/gallery-1.jpg" alt="" class="img-responsive">
-                    </div>                    
-                </div>
-                <div class="col-sm-3 no-gutter">
-                    <div class="img-box">
-						<a href="images/gallery-2.jpg" data-gal="prettyPhoto[galleryName]" class="img-zoom"><i class="fa fa-search"></i></a>
-                        <img src="images/gallery-2.jpg" alt="" class="img-responsive">
-                    </div>
-                    <div class="img-box">
-						<a href="images/gallery-3.jpg" data-gal="prettyPhoto[galleryName]" class="img-zoom"><i class="fa fa-search"></i></a>
-                        <img src="images/gallery-3.jpg" alt="" class="img-responsive">
-                    </div>                    
-                </div>
-                <div class="col-sm-3 no-gutter">
-                    <div class="img-box">
-						<a href="images/gallery-5.jpg" data-gal="prettyPhoto[galleryName]" class="img-zoom"><i class="fa fa-search"></i></a>
-                        <img src="images/gallery-5.jpg" alt="" class="img-responsive">
-                    </div>
-                </div>                
-            </div>
-        </div>
-    </div>
-    
-    <div class="mt-80 mb-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="facts">
-                            <div class="fact col-sm-4">
-                                <span class="head">
-                                    <span class="count" data-from="0" data-to="9" data-speed="3000"></span> Branches
-                                </span>
-                                <span class="foot">With 9 braches in function, we are very soon inaugurating the 10th one!</span>
-                            </div>
-                            <div class="fact col-sm-4">
-                                <span class="head">
-                                    <span class="count" data-from="0" data-to="56" data-speed="3000"></span> Students
-                                </span>
-                                <span class="foot">Average number of students per class. Offering world class education.</span>
-                            </div>
-                            <div class="fact col-sm-4">
-                                <span class="head">
-                                    <span class="count" data-from="0" data-to="15" data-speed="3000"></span> Teachers
-                                </span>
-                                <span class="foot">Best <i>"Student and Teacher Ratio"</i> in the world. Award 10 times in a row.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="clearfix"></div>
-        
-    <div class="container mb-100">
+
+
+        <!-- JW dropped programs - descriptive version and replace with gallery version from index-3
+    <div class="container mb-80">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="heading text-center">We're making a <span class="color2">Difference</span>
-                    <span class="sub-heading">EDUComp is a modern theme for the leading Educational Institutions. Bundled with Slider Revolution, this is beautiful!</span>
+                <h2 class="heading text-center">High Expectations <span class="color2">at Harper</span>
+                    <span class="sub-heading">Harper will help your child achieve his or her full potential.  Your child's school day will be challenging, fun, and tailored to fit the needs of your child.</span>
                     <span class="icon-divider"></span>
                 </h2>
             </div>
         </div>    
         <div class="row mt-20">
-            <div class="col-sm-6">
-                <img src="images/child-studying.jpg" class="img-responsive" alt="">
+            <div class="col-sm-8">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#t1body1" aria-controls="t1body1" role="tab" data-toggle="tab"><i class="fa fa-cubes fa-fw"></i>  Preschool</a></li>
+                    <li role="presentation"><a href="#t1body2" aria-controls="t1body2" role="tab" data-toggle="tab"><i class="fa fa-apple fa-fw"></i>  Elementary School</a></li>
+                    <li role="presentation"><a href="#t1body3" aria-controls="t1body3" role="tab" data-toggle="tab"><i class="fa fa-rocket fa-fw"></i>  Summer Camps</a></li>
+                    <li role="presentation"><a href="#t1body4" aria-controls="t1body4" role="tab" data-toggle="tab"><i class="fa fa-graduation-cap fa-fw"></i>  Tutoring</a></li>        
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="t1body1">
+                        <p>Harper preschool and pre-kindergaten programs will prepare your child to succeed academically and socially in kindergarten.</p>
+                        <p>We offer half-day and full day programs two, three, or five days a week.  An extended care programs is available both before and after school.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="t1body2">
+                        <p>Harper offers kindergarten through fifth grade with an emphasis on language arts and STEM.</p>
+                        <p>The curriculum is tailored to your student's individual needs. High expectatons for our students make school challenging and fun.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="t1body3">
+                        <p>Harper has both academic and adventure summer camps.  We tailor our camps to fit your schedule and your child's needs and interests.</p>
+                        <p> You can choose to focus on the classroom with math, reading, or computer coding or more adventurous camps like building robots and flying drones.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="t1body4">
+                        <p>After school and early evening tutoring is available to Harper students as well students not enrolled at Harper.</p>
+                        <p>Math, reading, study skills, and test prep are all areas where your child can achieve a real boost with Harper tutoring.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <div class="accordion-2">
-                    <div class="panel-group" id="a2" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="a2heading1">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#a2" href="#a2body1" aria-expanded="true" aria-controls="a2body1">
-                                        What's so awesome about Educomp?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="a2body1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="a2heading1" aria-expanded="true">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                </div>
-                            </div>
+            <div class="col-sm-4">
+                <aside class="widget download-widget text-center" style="margin-top:0px;">
+                    <div class="download-info">
+                        <p class="inverse font24">Help your child <br>achieve his / her<br>full potential.</p><br>
+                        <a href="admission-process.html" class="btn btn-default">Apply Now</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>   
+     -->	
+    
+    <div class="container mb-80">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="heading text-center">Harper <span class="color2">Programs</span>
+                    <span class="sub-heading">Our preschool through elementary grades plus tutoring provide your child with a personalized learning experience that is challenging and fun.</span>
+                    <span class="icon-divider"></span>
+                </h2>
+            </div>
+        </div>	
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="album-card">
+                    <a href="preschool-overview.html">
+                        <h4>Preschool</h4>
+                        <div class="img-rotate">            <!-- Replace with your images. Can be more than 3 -->
+                            <img src="images/770 x 642/PS - Billy on tire swing - 770 x 642.png" class="img-responsive" alt="" style="display: inline;">
+                            <img src="images/770 x 642/PS - preschooler-learning-to-print - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/PS - leo-climbing - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/PS - leo-playground - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/PS - henry-climbing - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/PS - henry-sandbox - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/PS - preschooler-on-playground - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="a2heading2">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#a2" href="#a2body2" aria-expanded="false" aria-controls="a2body2">
-                                      Why we are the best?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="a2body2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="a2heading2" aria-expanded="false">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                </div>
-                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="album-card">
+                    <a href="preschool-overview.html">
+                        <h4>Pre-kindergarten</h4>                        
+                        <div class="img-rotate">            <!-- Replace with your images. Can be more than 3 -->
+                            <img src="images/770 x 642/PK - Billy - tire 1 - 770 x 642.png" class="img-responsive" alt="" style="display: inline;">
+                            <img src="images/770 x 642/PK - Billy - tire 2 - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/PK - Billy - tire 3 - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/PK - Billy on playground in NYC - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/PK - happy-students - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="a2heading3">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#a2" href="#a2body3" aria-expanded="false" aria-controls="a2body3">
-                                      Why you would love Educomp?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="a2body3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="a2heading3" aria-expanded="false">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                </div>
-                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="album-card">
+                    <a href="elementary overview.html">
+                        <h4>Kindergarten</h4>
+                        <div class="img-rotate">            <!-- Replace with your images. Can be more than 3 -->
+                            <img src="images/770 x 642/KG - kit - 1st day of KG - 770 x 642.png" class="img-responsive" alt="" style="display: inline;">
+                            <img src="images/770 x 642/KG - preschoolers-learning-early-math - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/KG - student-with-good-behavior - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/KG - circle-time-learning-geography - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/KG - little-kid-reading - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/KG - kit and lucy - costumes - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
                         </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">        
+        <div class="col-sm-4">
+            <div class="album-card">
+                <a href="elementary-overview.html">
+                    <h4>Elementary School</h4>
+                    <div class="img-rotate">            <!-- Replace with your images. Can be more than 3 -->
+                            <img src="images/770 x 642/EL - Henry - Abraham Lincoln - 770 x 642.png" class="img-responsive" alt="" style="display: inline;">
+                            <img src="images/770 x 642/EL - kit and lucy - mosaic - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/EL - girls-experiment - 770 x 642.png" class="img-responsive" alt="" style="display: none;">                            
+                            <img src="images/770 x 642/EL - class-participation-reading - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/EL - kit and lucy - pink - 770 x 642.png" class="img-responsive" alt="" style="display: none;">          
+                            <img src="images/770 x 642/EL - boys on computer - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/EL - boy-on-computer - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/EL - kit and lucy - field trip - 770 x 642.png" class="img-responsive" alt="" style="display: none;">          
+                            <img src="images/770 x 642/EL - leo-coding - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                      </div>
+                </a>
+            </div>
+        </div>
+<!-- JW DROPPED Summer Camps until 2019
+        <div class="col-sm-4">
+            <div class="album-card">
+                <a href="album-single.html">
+                    <h4>Summer Camps</h4>                        
+                    <div class="img-rotate">            
+                            <img src="images/770 x 642/SC - robots-outdoors - 770 x 642.png" class="img-responsive" alt="" style="display: inline;">
+                            <img src="images/770 x 642/SC - drone - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/SC - boys-building-robots - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/SC - kids-parachute - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/SC - lego-robot - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/SC - leo-hour-of-code - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                      </div>
+                </a>
+            </div>
+        </div>
+-->        
+        <div class="col-sm-4">
+            <div class="album-card">
+                <a href="tutoring-overview.html">
+                    <h4>Tutoring</h4>
+                    <div class="img-rotate">            <!-- Replace with your images. Can be more than 3 -->
+                            <img src="images/770 x 642/TU - teacher-congratulating-girl - 770 x 642.png" class="img-responsive" alt="" style="display: inline;">
+                            <img src="images/770 x 642/TU - teacher-tutoring-boy - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/TU - teacher-tutoring-girl - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/TU - teacher-tutoring-girl-2 - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/TU - teacher-tutoring-girl-3 - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/TU - teacher-tutoring-girl-4 - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/TU - teacher-tutoring-girl-5 - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/TU - teacher-tutoring-girl-5 - 770 x 642.png" class="img-responsive" alt="" style="display: none;">           
+                            <img src="images/770 x 642/TU - teacher-tutoring-two-boys - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                            <img src="images/770 x 642/TU - teacher-tutoring-two-girls - 770 x 642.png" class="img-responsive" alt="" style="display: none;">
+                    </div>
+                </a>
+            </div>
+        </div>   
+        </div>        
+    </div>
+    
+<!-- JW DROPPED Our Courses Section
+    <div class="container mb-100">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="heading text-center">Our <span class="color2">Courses</span>
+                    <span class="sub-heading">EDUComp is a modern theme for the leading Educational Institutions. Bundled with Slider Revolution, this is beautiful!</span>
+                    <span class="icon-divider"></span>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="course-card new">
+                    <img src="images/course-grid-1.jpg" class="img-responsive course-img" alt="">
+                    <a href="course-detail.html" class="course-link"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    <div class="course-detail">
+                        <h4 class="heading">Diploma in Marketing</h4>
+                        <span class="brief">In this course, you learn all advanced techniques and methodologies.</span>
+                        <ul class="course-features">
+                            <li><i class="fa fa-map-marker"></i> California</li>
+                            <li><i class="fa fa-clock-o"></i> 1 year</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-card">
+                    <img src="images/course-grid-2.jpg" class="img-responsive course-img" alt="">
+                    <a href="course-detail.html" class="course-link"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    <div class="course-detail">
+                        <h4 class="heading">Masters in Marketing</h4>
+                        <span class="brief">In this course, you learn all advanced techniques and methodologies.</span>
+                        <ul class="course-features">
+                            <li><i class="fa fa-map-marker"></i> America</li>
+                            <li><i class="fa fa-clock-o"></i> 1 year</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="course-card new">
+                    <img src="images/course-grid-3.jpg" class="img-responsive course-img" alt="">
+                    <a href="course-detail.html" class="course-link"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    <div class="course-detail">
+                        <h4 class="heading">Diploma in Engineering</h4>
+                        <span class="brief">In this course, you learn all advanced techniques and methodologies.</span>
+                        <ul class="course-features">
+                            <li><i class="fa fa-map-marker"></i> Paris</li>
+                            <li><i class="fa fa-clock-o"></i> 1 year</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-12" style="text-align:center;">
+				<a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="btn btn-primary btn-sm">See All Courses <i class="fa fa-long-arrow-right"></i> </a>
+            </div>			
+        </div>
+    </div>
+ -->    
+ 
+    <div class="clearfix"></div>
+    
+<!-- JW DROPPED Our Principles Section    
+    
+    <div class="process-1 pt-100 pb-100 mb-100" data-parallax="scroll" data-image-src="images/einstein.jpg">
+        <div class="container">
+            <h2 class="heading inverse text-center">Our <span class="color2">Principles</span></h2>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 process-box">
+                    <div class="process-round">
+                        <span class="number">01.</span>
+                        <p>High Expectations.  Kids excel when expextations are set high.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 process-box">
+                    <div class="process-round">
+                        <span class="number">02.</span>
+                        <p>Active Learning.  Kids learn best by doing, by being actively engaged in learning.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 process-box">
+                    <div class="process-round">
+                        <span class="number">03.</span>
+                        <p>Mastery of three Rs (reading, writing, and arithmetic) is foundation of strong education.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 process-box">
+                    <div class="process-round">
+                        <span class="number">04.</span>
+                        <p>Parent involvement. Parents are their children's first and most important teachers.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+ -->  
     
-    <div class="clearfix"></div>
-    
-    <div class="container-fluid mb-100">
-        <div class="row">
-            <div class="tweets" data-parallax="scroll" data-image-src="images/twitter.jpg" data-speed="0.4">
-                <p>Educomp has been awarded the most beautiful theme in educational category.<a href="#">#award</a></p>
-                <p>Wow is the word for <a href="#">@Educomp</a> theme. Buy now!!</p>
-                <p>Educomp has all the elements needed for <a href="">#education</a> website.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="clearfix"></div>
-    
-	<div class="container mb-80">
+    <div class="container mb-80">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="heading text-center">Meet our <span class="color2">Teachers</span>
-                    <span class="sub-heading">Our highly qualified teachers put in their best efforts for outstanding results in both studies and co-curricular activities.</span>
+                <h2 class="heading text-center">Meet our <span class="color2">founder</span>
+                    <span class="sub-heading">Joe Wagner is the founder of Harper School.  Joe previously co-founded Stratford School, a high performing private preschool and elementary school in Silicon Valley.  Joe has degrees from Georgetown University and University of Pennsylvania.  Joe grew up in St. Louis and currently lives in University City with his wife, Molly, and their seven children.</span>
                     <span class="icon-divider"></span>
                 </h2>
             </div>
             <div class="col-sm-4">
                 <div class="teacher-card">
                     <ul class="social-links">
-                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/jcwags" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/joewagnerstl/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/jcwags" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jcwags/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
-                    <img src="images/teacher-1.png" class="teacher-img img-responsive" alt="">
-                    <a href="teacher-profile.html" class="teacher-link">View Profile</a>
+                    <img src="images/wagner joe - profile pic 3.png" class="teacher-img img-responsive" alt="">
+                    <a href="founder-profile.html" class="teacher-link">View Profile</a>
                     <div class="teacher-detail">
-                        <h4 class="heading">Ms. Simcy Janes</h4>
-                        <span class="position">HOD, Science Department</span>
+                        <h4 class="heading">Joe Wagner</h4>
+                        <span class="position">Harper School, Founder and President</span>
                     </div>
                 </div>
             </div>
+<!-- JW DROPPED two columns from teacher profile div            
             <div class="col-sm-4">
                 <div class="teacher-card">
                     <ul class="social-links">
@@ -728,171 +2147,27 @@
                         <span class="position">HOD, English Department</span>
                     </div>
                 </div>
-            </div>            
-        </div>
-    </div>    
-     
-    <div class="clearfix"></div>
-     
-    <div class="event pt-100 pb-100" data-parallax="scroll" data-image-src="images/event-background.jpg">
-        <div class="container">
-            <h2 class="heading text-center">Upcoming <span class="color2">Event</span>
-                <span class="sub-heading">Countdown timer for upcoming events and a detailed page for events. Allow people to participate and make it a big hit!</span>
-                <span class="icon-divider"></span>
-            </h2>
-            <div class="row">
-                <div class="col-sm-5">
-                    <div class="next-event">
-                        <span class="event-date">23</span> Oct, Monday
-                    </div>
-                </div>
-                <div class="col-sm-7">
-                    <ul class="timer" data-date="2016/10/23 00:00:00">           <!-- Put event Date in YYYY/MM/DD hh:mm:ss format -->
-                        <li><span class="days">0</span>days</li>
-                        <li><span class="hours">0</span>hrs</li>
-                        <li><span class="minutes">00</span>min</li>
-                        <li><span class="seconds">00</span>sec</li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-                <div class="col-sm-12 mt-20">
-                    <div class="event-details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
             </div>
-            <div class="clearfix"></div>
-            <div class="row mt-40">
-                <div class="col-sm-3">
-                    <div class="icon-box-5">
-                        <div class="icon-box-icon">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h5 class="heading">School Grounds</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="icon-box-5">
-                        <div class="icon-box-icon">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h5 class="heading">Sharp at 7:00 p.m.</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="icon-box-5">
-                        <div class="icon-box-icon">
-                            <i class="fa fa-users" aria-hidden="true"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h5 class="heading">Space for 1000</h5>
-                        </div>
-                    </div>
-                </div>   
-                <div class="col-sm-3">
-                    <div class="icon-box-5">
-                        <div class="icon-box-icon">
-                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                        </div>
-                        <div class="icon-box-content">
-                            <h5 class="heading">Award Ceremony</h5>
-                        </div>
-                    </div>                
-                </div>                            
-            </div>
-            <div class="row text-center mt-60">
-                <a href="upcoming-events.html" class="btn btn-primary">View All Events</a>
-            </div>
+   -->           
         </div>
     </div>
     
-    <footer class="footer">         <!-- Footer -->
-        <div class="footer-pri">            <!-- Primary Footer -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-4 footer-widget">            <!-- Footer Widget - Blog -->
-                        <h5 class="heading inverse">Recent <span class="color2">Blog</span></h5>
-                        <ul class="blog-thumbnail">
-                            <li class="entry">          <!-- Blog Entry Excerpt -->
-                                <div class="entry-content">
-                                    <h4 class="entry-header"><a href="blog-single.html">What it takes to be National Best ?</a></h4>
-                                    <p class="entry-text">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.                                     </p>
-                                </div>
-                            </li>
-                            <li class="entry">          <!-- Blog Entry Excerpt -->
-                                <div class="entry-content">
-                                    <h4 class="entry-header"><a href="blog-single.html">How do we achieve 100% success rate ?</a></h4>
-                                    <p class="entry-text">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.                                     </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 footer-widget">            <!-- Footer Widget - Quick Links -->
-                        <h5 class="heading inverse">Quick <span class="color2">Links</span></h5>
-                        <ul class="quick-links">
-                            <li><a href="brief-history.html">Brief History</a></li>
-                            <li><a href="about-educomp.html">About EDUComp</a></li>
-                            <li><a href="course-grid.html">Our Courses</a></li>
-                            <li><a href="teachers.html">Our Teachers</a></li>
-                            <li><a href="upcoming-events.html">Upcoming Events</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 footer-widget">            <!-- Footer Widget - Affiliations -->
-                        <h5 class="heading inverse">Affiliations &amp; <span class="color2">Awards</span></h5>
-                        <ul class="affiliations">
-                            <li><img src="images/university-1.png" class="img-responsive" alt=""></li>
-                            <li><img src="images/university-2.png" class="img-responsive" alt=""></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 footer-widget">            <!-- Footer Widget - Policies -->
-                        <h5 class="heading inverse">Our <span class="color2">Elements</span></h5>
-                        <ul class="quick-links">
-                            <li><a href="icon-boxes.html">Icon Boxes</a></li>
-                            <li><a href="accordion.html">Accordion</a></li>
-                            <li><a href="tables.html">Tables</a></li>
-                            <li><a href="tabs.html">Tabs</a></li>
-                            <li><a href="modals.html">Modals</a></li>
-                            <li><a href="progress-bars.html">Progress Bars</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 footer-widget">            <!-- Footer Widget - Contact Info -->
-                        <h5 class="heading inverse">Contact  <span class="color2">Us</span></h5>
-                        <address>
-                            <strong>EDUcomp Group Of Institutions</strong>
-                            <span>45th Floor,<br/> Newzek Estate Building,<br/> United Kingdom</span>
-                        </address>
-                        <a href="tel:+4525644563" class="phone"><i class="fa fa-phone fa-fw"></i> +452 564 4563</a>
-                        <a href="mailto:test@example.com" class="email"><i class="fa fa-envelope fa-fw"></i> info@company.com</a>
-                    </div>
+    <div class="cta-light-full">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h3>Give your child the right foundation to achieve his / her full potential.</h3>
+                    <br><br>
+                    <a href="https://goo.gl/forms/uBw46nIbyBSVKDcH3" target="_blank" class="btn btn-primary">Apply Today &nbsp;&nbsp; <i class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
-        <div class="footer-sec">            <!-- Secondary Footer -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 text-center">
-                        <span class="copyright">&copy; Copyright Your Company 2016</span>           <!-- Copyright Text -->
-                    </div>
-                    <div class="col-sm-6 text-center">
-                        <ul class="social">          <!-- Social Media Links -->
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-reddit-alien"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>    
+        
+    <div id="footer"></div>
     
 	<!-- Modal -->
+	<!-- JW DROPPED Modal 
 	 <div class="modal fade" id="modal1" data-open-onload="true" data-open-delay="2500" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -920,6 +2195,7 @@
             </div>
         </div>
     </div>
+    -->
     
     <div id="back"><i class="fa fa-angle-up"></i></div>     <!-- Back To Top -->
 
